@@ -1,0 +1,18 @@
+:main
+a_name Modpack RlCraft by d0ce3
+a_version v1
+a_author d0ce3_
+a_add_type c_forge
+a_add_version c_forge 1.12.2 https://maven.minecraftforge.net/net/minecraftforge/forge/1.12.2-14.23.5.2860/forge-1.12.2-14.23.5.2860-installer.jar 8
+
+:button instalar RlCraft (1.12.2 - 14.23.5.2860)
+text Instalar RlCraft (1.12.2 - 14.23.5.2860)
+remove_server
+download_version y c_forge 1.12.2
+exec java -jar 1.12.2.jar
+config server_type 1.12.2
+exec echo "eula=true" >> eula.txt
+config server_version 1.12.2
+config_save
+say RlCraft se ha instalado correctament!!
+sleep 3
